@@ -20,6 +20,12 @@ body {
     --nav-hover-link-color: #002570;
     --nav-hover-background-color: #f8d00d;
 }
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
     
 header h1, div {
     color:  var(--accent2-color);
