@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
 body {
     font-family: var(--paragraph-font);
@@ -21,56 +21,72 @@ body {
     --nav-hover-background-color: #f8d00d;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
 }
+
+.hero {
+    position: relative;
+    border: 1px solid rgba(0,0,0,.1);
     
-header h1, div {
-    color:  var(--accent2-color);
 }
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;  
+}
+
+.hero article {
+    background-color: var(--accent2-color);
+    border: 1px solid rgba(0,0,0,.1);
+    opacity: .6;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    right: 80px;
+}
+
+.hero article p {
+    color: white;
+    font-size: var(--paragraph-font);
+    padding: 5px;
     
-h1, h2 {
+    
+}
+
+.hero h1 {
+    color: white;
+    background-color: black;
+    opacity: .6;
+    text-align: center;
+    position: absolute;
+    top: 10px;  
+    width: 100%;
     font-family: var(--heading-font);
-    color: var(--accent2-color);
 }
 
-header {
-    padding: 20px;
-    background-color: var(--accent1-color);
-    color: var(--accent2-color);
+.hero article img {
+    float: right;
+    width: 120px; 
+    padding: 10px;    
 }
 
-p {
-    padding: 25px;
-}
-
-nav {
-    background-color: var(--nav-background-color);
-    font-size: 1.2rem;
-    display: flex;
-}
-
-nav a {
+a {
     text-decoration: none;
 }
 
-h1 {
-    position: absolute;
+.sociallinks {
+    position: relative;
 }
 
-article {
-    position: absolute;
-    background-color: bisque;
+.sociallinks img {
+    float: left;
+    width: 30px;
 }
 
-article img {
-    float: right;
+footer {
+    position: absolute;
 }
