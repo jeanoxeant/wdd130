@@ -52,9 +52,7 @@ body {
 .hero article p {
     color: white;
     font-size: var(--paragraph-font);
-    padding: 5px;
-    
-    
+    padding: 5px; 
 }
 
 .hero h1 {
@@ -76,6 +74,7 @@ body {
 
 a {
     text-decoration: none;
+    flex: 1 1 100%;
 }
 
 .sociallinks {
@@ -88,5 +87,121 @@ a {
 }
 
 footer {
-    position: absolute;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 50px;
+    margin-top: 10px;
 }
+
+footer p {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: right;
+}
+
+.sociallinks {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+	align-items: center;
+    gap: 20px;
+}
+
+header img {
+    margin: 0 0.25rem 0 1rem;
+	width: 150px;
+	height: auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    /*column-gap: 5px;
+    row-gap: 5px;*/
+    justify-content: space-around;
+    align-content: space-around;
+    padding: 20px;
+}
+
+.adventure h2 {
+    grid-column: span 5;
+    /*grid-row: 1/2;*/
+    text-align: center;
+}
+
+.adventure figure img {
+    max-width: 150px;
+    max-height: 100px;
+}
+
+.adventure figure {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+  }
+/* 
+.cheakamus {
+    grid-column: 1/2;
+    grid-row: 2/3;  
+}
+
+.trishull {
+    grid-column: 2/3;
+    grid-row: 2/3; 
+}
+
+.mountain {
+    grid-column: 3/4;
+    grid-row: 2/3; 
+}
+
+.beach {
+    grid-column: 4/5;
+    grid-row: 2/3; 
+}
+
+.kayak {
+    grid-column: 5/6;
+    grid-row: 2/3; 
+}
+*/
+.adventure figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+  
+.beach img {
+    width: 500px;
+}
+
+.kayak img {
+    width: 500px;
+}
+
+.history h2 {
+    text-align: center;
+}
+
+.history p{
+    padding: 20px;
+}
+
+
