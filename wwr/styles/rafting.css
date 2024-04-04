@@ -36,6 +36,23 @@ main {
     border: 1px solid rgba(0,0,0,.1);
 }
 */
+
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.pictures img {
+    width: 250px;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px var(--accent2-color);
+    padding: 10px;
+    margin: 10px;
+   
+}
+
 .contact  {
     /*border: 1px solid rgba(0,0,0,.1);*/
     display: grid;
@@ -67,9 +84,7 @@ main {
     box-shadow: 10px 10px var(--accent2-color);
     border-radius: 10px;
     grid-column: 2/3;
-    grid-row: 4/5;
-    
-    
+    grid-row: 4/5; 
     
 }
 
