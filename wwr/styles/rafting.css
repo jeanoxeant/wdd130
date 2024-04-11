@@ -54,6 +54,35 @@ main {
    
 }
 
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+    align-items: center;
+    
+}
+
+.fotos img {
+    width: 250px;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px var(--accent2-color);
+    padding: 10px;
+    margin: 10px;
+   
+}
+
+.titulo h1 {
+    font-family: var(--heading-font);
+    text-align: center; 
+    color: navy;
+}
+
+.titulo2 h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+    color: navy; 
+}
+
 .contact  {
     /*border: 1px solid rgba(0,0,0,.1);*/
     display: grid;
@@ -165,8 +194,8 @@ form {
     opacity: .6;
     position: absolute;
     top: 100px;
-    left: 80px;
-    right: 80px;
+    left: 20px;
+    right: 20px;
 }
 
 .hero article p {
@@ -189,7 +218,7 @@ form {
 .hero article img {
     float: right;
     width: 120px; 
-    padding: 10px;    
+    padding: 5px;    
 }
 
 a {
@@ -339,7 +368,7 @@ nav {
 
 /*for my form */
 
-h1 {
+.contact h1 {
     margin: 1rem;
     font-size: 1.4em;
     color: navy;
