@@ -83,6 +83,10 @@ main {
     color: navy; 
 }
 
+.titulo2 img {
+    width: 100%; 
+}
+
 .contact  {
     /*border: 1px solid rgba(0,0,0,.1);*/
     display: grid;
