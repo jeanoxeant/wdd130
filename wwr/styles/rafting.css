@@ -48,7 +48,7 @@ main {
 .pictures img {
     width: 250px;
     border-radius: 0.5rem;
-    box-shadow: 10px 10px var(--accent2-color);
+    /*box-shadow: 10px 10px var(--accent2-color);*/
     padding: 10px;
     margin: 10px;
    
@@ -130,7 +130,7 @@ main {
     /*border: 1px solid rgba(0,0,0,.1);*/
     /*width: 450px;
     height: auto;*/
-    box-shadow: 10px 10px var(--accent2-color);
+   /* box-shadow: 10px 10px var(--accent2-color);*/
     border-radius: 10px;
     grid-column: 2/3;
     grid-row: 4/5; 
