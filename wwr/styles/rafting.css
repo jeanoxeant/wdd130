@@ -59,16 +59,33 @@ main {
     grid-template-columns: repeat(3, 1fr);
     margin: 20px;
     align-items: center;
+   /* box-shadow: 10px 10px var(--accent2-color);*/
+    /*border: 1px solid rgba(0,0,0,.1);*/
     
 }
 
 .fotos img {
-    width: 250px;
+    width: 200px;
     border-radius: 0.5rem;
-    box-shadow: 10px 10px var(--accent2-color);
-    padding: 10px;
-    margin: 10px;
+   /* box-shadow: 10px 10px var(--accent2-color);*/
+    /*padding: 5px;
+    margin: 5px;*/
    
+}
+
+.fotos apurimac {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.fotos urubamba {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.fotos urubambariver {
+    grid-column: 3/4;
+    grid-row: 1/2;
 }
 
 .titulo h1 {
@@ -463,4 +480,24 @@ span {
     margin: auto; 
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
 
+th, td {
+   /* background-color: #96D4D4;*/
+    border-color: #002570;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+table {
+    border-style: solid;
+    /*float: center;*/
+    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-top: 20px;
+}
